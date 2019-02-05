@@ -33,3 +33,8 @@ function collapseAllSm() {
   $("#expand-button-div-sm").toggleClass("d-none");
   $("#collapse-button-div-sm").toggleClass("d-none");
 }
+
+$('.card-collapse-controller i').click(function() {
+    $(this).toggleClass('fa-chevron-down')
+    $(this).toggleClass('fa-chevron-up')
+})
