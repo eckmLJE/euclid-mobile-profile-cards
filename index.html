@@ -29,9 +29,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="profile-card-container-sm d-md-none sticky-top">
+      <div class="card">
+        <div class="card-body d-flex p-2">
+          <div class="profile-img-container">
+            <img
+              src="assets/william-gibson-avatar.jpg"
+              alt="profile-image"
+              class="rounded"
+              style="height: 60px;"
+            />
+          </div>
+
+          <div class="profile-content-sm ml-4">
+            <h5 class="card-title p-0 m-0">John Doe</h5>
+            <small class="p-0 m-0 d-block">Director</small>
+            <small class="p-0 m-0 d-block">NANR</small>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <div class="row my-4">
-        <div class="col-12">
+      <div class="row">
+        <div class="col-12 my-4 d-none d-md-block">
           <h1 class="float-left">Member Dashboard</h1>
           <div class="d-inline" id="size-sup">
             <div class="d-inline d-sm-none">XS</div>
@@ -95,28 +115,9 @@
           </div>
         </div>
         <!-- Content Card Column -->
-        <div class="col-12 col-md-8 col-lg-9">
+        <div class="col-12 col-md-8 col-lg-9 mt-4 mt-md-0">
           <!-- Profile Card Small -->
-          <div class="profile-card-container-sm d-md-none sticky-top">
-            <div class="card">
-              <div class="card-body d-flex">
-                <div class="profile-img-container">
-                  <img
-                    src="assets/william-gibson-avatar.jpg"
-                    alt="profile-image"
-                    class="rounded"
-                    style="height: 100px;"
-                  />
-                </div>
 
-                <div class="profile-content-sm ml-4">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="p-0 m-0">Director</p>
-                  <p class="p-0 m-0">NANR</p>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="d-flex flex-wrap p-0 m-0" style="width: 100%;">
             <div class="card-container">
               <div class="card" class="profile-info-card" id="directories-card">
