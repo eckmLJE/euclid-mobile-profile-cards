@@ -24,6 +24,14 @@
   flex-basis: 1;
 }
 
+.card-header {
+  background-color: white !important;
+}
+
+.list-group {
+  /* border-top: 1px solid rgb(37, 37, 37); */
+}
+
 .profile-info-card {
   height: 100%;
 }
@@ -48,7 +56,9 @@
   color: #2e9ac2;
 }
 
-.expand-collapse-button button {
+.expand-collapse-button button,
+#expand-collapse-all-button,
+.expand-collapse-buttons button {
   border: none !important;
   box-shadow: none !important;
 }

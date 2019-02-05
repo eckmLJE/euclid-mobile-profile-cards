@@ -9,8 +9,8 @@ function calculateLayout(e) {
   console.log(e);
 }
 
-$("#expand-all-button").click(expandAll);
-$("#collapse-all-button").click(collapseAll);
+$("#profile-expand-all-div").click(expandAllProfile);
+$("#profile-collapse-all-div").click(collapseAllProfile);
 $("#expand-all-button-sm").click(expandAllSm);
 $("#collapse-all-button-sm").click(collapseAllSm);
 
@@ -42,3 +42,15 @@ $(".card-collapse-controller").click(function() {
     .find("i")
     .toggleClass("fa-chevron-up");
 });
+
+function collapseAllProfile() {
+  collapseAll();
+  $("#profile-expand-all-div").toggleClass("d-none");
+  $("#profile-collapse-all-div").toggleClass("d-none");
+}
+
+function expandAllProfile() {
+  expandAll();
+  $("#profile-collapse-all-div").toggleClass("d-none");
+  $("#profile-expand-all-div").toggleClass("d-none");
+}

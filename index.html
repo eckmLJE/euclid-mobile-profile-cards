@@ -115,25 +115,29 @@
                 </div>
               </div>
             </div>
-            <div class="expand-collapse-buttons px-2 py-1">
-              <div class="p-1">
+            <div class="expand-collapse-buttons py-1">
+              <div class="p-1" id="profile-expand-all-div">
                 <button
-                  id="expand-all-button"
-                  class="btn btn-outline-info btn-block"
-                  style="padding: 0.3rem 1.8rem; line-height: 1.5rem"
+                  id="profile-expand-all-button"
+                  class="btn btn-outline-info"
+                  style="padding: 0.3rem 1rem; line-height: 1.5rem; width: 100%"
                 >
-                  Expand All
-                  <i class="fas fa-chevron-down mt-1 mr-2 float-right"> </i>
+                  <p class="d-inline lead float-left">
+                    Expand
+                  </p>
+                  <i class="fas fa-chevron-down mt-1 mr-3 float-right"></i>
                 </button>
               </div>
-              <div class="p-1">
+              <div class="p-1 d-none" id="profile-collapse-all-div">
                 <button
-                  id="collapse-all-button"
-                  class="btn btn-outline-info btn-block"
-                  style="padding: 0.3rem 1.8rem; line-height: 1.5rem"
+                  id="profile-collapse-all-button"
+                  class="btn btn-outline-info "
+                  style="padding: 0.3rem 1rem; line-height: 1.5rem;width: 100%;"
                 >
-                  Collapse All
-                  <i class="fas fa-chevron-up mt-1 mr-2 float-right"></i>
+                  <p class="d-inline lead float-left">
+                    Collapse
+                  </p>
+                  <i class="fas fa-chevron-up mt-1 mr-3 float-right"></i>
                 </button>
               </div>
             </div>
@@ -147,7 +151,8 @@
             <div class="card-container">
               <div class="card" class="profile-info-card" id="directories-card">
                 <div class="card-header">
-                  Directories<a
+                  <p class="lead d-inline">Directories</p>
+                  <a
                     data-toggle="collapse"
                     href="#directory-list-collapse"
                     role="button"
@@ -180,7 +185,10 @@
             <div class="card-container">
               <div class="card" class="profile-info-card" id="events-card">
                 <div class="card-header">
-                  My Events<a
+                  <p class="d-inline lead">
+                    My Events
+                  </p>
+                  <a
                     data-toggle="collapse"
                     href="#events-list-collapse"
                     role="button"
@@ -214,7 +222,8 @@
                 id="organization-card"
               >
                 <div class="card-header">
-                  My Organization<a
+                  <p class="d-inline lead">My Organization</p>
+                  <a
                     data-toggle="collapse"
                     href="#org-list-collapse"
                     role="button"
@@ -248,7 +257,8 @@
             <div class="card-container">
               <div class="card" class="profile-info-card" id="billing-card">
                 <div class="card-header">
-                  Billing<a
+                  <p class="d-inline lead">Billing</p>
+                  <a
                     data-toggle="collapse"
                     href="#billing-list-collapse"
                     role="button"
@@ -278,7 +288,8 @@
             <div class="card-container">
               <div class="card" class="profile-info-card" id="documents-card">
                 <div class="card-header">
-                  My Documents<a
+                  <p class="d-inline lead">My Documents</p>
+                  <a
                     data-toggle="collapse"
                     href="#documents-list-collapse"
                     role="button"
@@ -317,7 +328,8 @@
             <div class="card-container">
               <div class="card" class="profile-info-card" id="committees-card">
                 <div class="card-header">
-                  Committees<a
+                  <p class="d-inline lead">Committees</p>
+                  <a
                     data-toggle="collapse"
                     href="#committees-list-collapse"
                     role="button"
