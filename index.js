@@ -8,3 +8,10 @@ jQuery(window).on(
 function calculateLayout(e) {
   console.log(e);
 }
+
+$("#expand-all-button").click(function() {
+  $(".collapse").collapse("show");
+});
+$("#collapse-all-button").click(function() {
+  $(".collapse").collapse("hide");
+});
