@@ -47,3 +47,8 @@
 #profile-edit-pencil i:hover {
   color: #2e9ac2;
 }
+
+.expand-collapse-button button {
+  border: none !important;
+  box-shadow: none !important;
+}
