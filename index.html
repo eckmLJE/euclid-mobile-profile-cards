@@ -30,7 +30,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="row mt-4">
+      <div class="row my-4">
         <div class="col-12">
           <h1 class="float-left">Member Dashboard</h1>
           <div class="d-inline" id="size-sup">
@@ -42,9 +42,87 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          Content
+      <!-- content-row -->
+      <div class="row content-row">
+        <!-- Profile Card Column -->
+        <div class="d-none d-md-block col-12 col-md-4 col-lg-3">
+          <!-- Profile Card -->
+          <div class="profile-card-container">
+            <div class="card">
+              <img
+                src="assets/william-gibson-avatar.jpg"
+                alt="profile-image"
+                class="card-img-top"
+                style="object-fit: cover; width: 100%;height:auto;"
+              />
+
+              <div class="card-body">
+                <h4 class="card-title">Anna Doe</h4>
+                <p class="p-0 m-0">Director</p>
+                <p class="p-0 m-0">NANR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Card Column -->
+        <div class="col-12 col-md-8 col-lg-9 d-flex flex-wrap">
+          <!-- Profile Card Small -->
+          <div class="profile-card-container-sm d-md-none">
+            <div class="card">
+              <div class="card-body d-flex">
+                <div class="profile-img-container">
+                  <img
+                    src="assets/william-gibson-avatar.jpg"
+                    alt="profile-image"
+                    class="rounded"
+                    style="height: 100px;"
+                  />
+                </div>
+
+                <div class="profile-content-sm ml-4">
+                  <h4 class="card-title">Anna Doe</h4>
+                  <p class="p-0 m-0">Director</p>
+                  <p class="p-0 m-0">NANR</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card" id="directories-card">
+              <div class="card-header">Directories</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card" id="events-card">
+              <div class="card-header">My Events</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card" id="organization-card">
+              <div class="card-header">My Organization</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card" id="billing-card">
+              <div class="card-header">Billing</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card" id="documents-card">
+              <div class="card-header">My Documents</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card" id="committees-card">
+              <div class="card-header">Committees</div>
+              <div class="card-body"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
