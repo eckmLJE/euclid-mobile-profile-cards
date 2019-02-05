@@ -25,6 +25,10 @@
   max-height: 300px;
 }
 
+/* .card-container .card {
+  height: 100%;
+} */
+
 .profile-info-card {
   height: 100%;
 }
@@ -39,7 +43,6 @@
   text-align: center;
   border-radius: 100%;
   cursor: pointer;
-  transition: font-size 5s;
 }
 
 #profile-edit-pencil i {
@@ -47,5 +50,5 @@
 }
 
 #profile-edit-pencil i:hover {
-  font-size: 1.8rem;
+  color: #2e9ac2;
 }
