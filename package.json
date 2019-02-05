@@ -1,0 +1,23 @@
+{
+  "name": "mobile-profile-cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eckmLJE/mobile-profile-cards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eckmLJE/mobile-profile-cards/issues"
+  },
+  "homepage": "https://github.com/eckmLJE/mobile-profile-cards#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
