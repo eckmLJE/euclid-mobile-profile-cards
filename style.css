@@ -6,14 +6,14 @@
 .profile-card-container {
   padding: 10px;
   width: 100%;
-  /* min-width: 200px; */
+  min-width: 200px;
 }
 
 .profile-card-container-sm {
   padding: 10px;
   width: 100%;
-  max-height: 200px;
-  /* min-width: 200px; */
+  max-height: 170px;
+  min-width: 200px;
 }
 
 .card-container {
@@ -22,4 +22,30 @@
   min-width: 275px;
   flex-grow: 1;
   flex-basis: 1;
+  max-height: 300px;
+}
+
+.profile-info-card {
+  height: 100%;
+}
+
+#profile-edit-pencil {
+  margin: auto;
+  margin-top: -27px;
+  font-size: 1.5rem;
+  background-color: white;
+  width: 3.25rem;
+  height: 3.25rem;
+  text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: font-size 5s;
+}
+
+#profile-edit-pencil i {
+  line-height: 3.25rem;
+}
+
+#profile-edit-pencil i:hover {
+  font-size: 1.8rem;
 }
