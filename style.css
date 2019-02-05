@@ -22,12 +22,7 @@
   min-width: 275px;
   flex-grow: 1;
   flex-basis: 1;
-  max-height: 300px;
 }
-
-/* .card-container .card {
-  height: 100%;
-} */
 
 .profile-info-card {
   height: 100%;

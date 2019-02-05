@@ -71,7 +71,7 @@
           </div>
         </div>
         <!-- Content Card Column -->
-        <div class="col-12 col-md-8 col-lg-9 d-flex flex-wrap">
+        <div class="col-12 col-md-8 col-lg-9">
           <!-- Profile Card Small -->
           <div class="profile-card-container-sm d-md-none">
             <div class="card">
@@ -93,194 +93,203 @@
               </div>
             </div>
           </div>
-          <div class="card-container">
-            <div class="card" class="profile-info-card" id="directories-card">
-              <div class="card-header">
-                Directories<a
-                  data-toggle="collapse"
-                  href="#directory-list-collapse"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="directory-list-collapse"
-                  id="directory-collapse-controller"
-                  class="text-info float-right"
-                  ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
-                ></a>
+          <div
+            class="d-flex flex-wrap p-0 m-0"
+            style="width: 100%; height: 0.11px"
+          >
+            <div class="card-container">
+              <div class="card" class="profile-info-card" id="directories-card">
+                <div class="card-header">
+                  Directories<a
+                    data-toggle="collapse"
+                    href="#directory-list-collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="directory-list-collapse"
+                    id="directory-collapse-controller"
+                    class="text-info float-right"
+                    ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
+                  ></a>
+                </div>
+                <ul
+                  class="list-group list-group-flush collapse"
+                  id="directory-list-collapse"
+                >
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Member Directory</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Committee Directory</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Chapter Directory</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Organization Directory</a>
+                  </li>
+                </ul>
               </div>
-              <ul
-                class="list-group list-group-flush collapse"
-                id="directory-list-collapse"
-              >
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Member Directory</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Committee Directory</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Chapter Directory</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Organization Directory</a>
-                </li>
-              </ul>
             </div>
-          </div>
-          <div class="card-container">
-            <div class="card" class="profile-info-card" id="events-card">
-              <div class="card-header">
-                My Events<a
-                  data-toggle="collapse"
-                  href="#events-list-collapse"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="events-list-collapse"
-                  id="events-collapse-controller"
-                  class="text-info float-right"
-                  ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
-                ></a>
+            <div class="card-container">
+              <div class="card" class="profile-info-card" id="events-card">
+                <div class="card-header">
+                  My Events<a
+                    data-toggle="collapse"
+                    href="#events-list-collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="events-list-collapse"
+                    id="events-collapse-controller"
+                    class="text-info float-right"
+                    ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
+                  ></a>
+                </div>
+                <ul
+                  class="list-group list-group-flush collapse"
+                  id="events-list-collapse"
+                >
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">My Registered Events</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">My Event History</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Past Event Materials</a>
+                  </li>
+                </ul>
               </div>
-              <ul
-                class="list-group list-group-flush collapse"
-                id="events-list-collapse"
-              >
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">My Registered Events</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">My Event History</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Past Event Materials</a>
-                </li>
-              </ul>
             </div>
-          </div>
-          <div class="card-container">
-            <div class="card" class="profile-info-card" id="organization-card">
-              <div class="card-header">
-                My Organization<a
-                  data-toggle="collapse"
-                  href="#org-list-collapse"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="org-list-collapse"
-                  id="org-collapse-controller"
-                  class="text-info float-right"
-                  ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
-                ></a>
-              </div>
-              <ul
-                class="list-group list-group-flush collapse"
-                id="org-list-collapse"
+            <div class="card-container">
+              <div
+                class="card"
+                class="profile-info-card"
+                id="organization-card"
               >
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Organization Profile</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#"
-                    >Organization Transaction History</a
-                  >
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#"
-                    >Organization Membership Application</a
-                  >
-                </li>
-              </ul>
+                <div class="card-header">
+                  My Organization<a
+                    data-toggle="collapse"
+                    href="#org-list-collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="org-list-collapse"
+                    id="org-collapse-controller"
+                    class="text-info float-right"
+                    ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
+                  ></a>
+                </div>
+                <ul
+                  class="list-group list-group-flush collapse"
+                  id="org-list-collapse"
+                >
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Organization Profile</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#"
+                      >Organization Transaction History</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#"
+                      >Organization Membership Application</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="card-container">
-            <div class="card" class="profile-info-card" id="billing-card">
-              <div class="card-header">
-                Billing<a
-                  data-toggle="collapse"
-                  href="#billing-list-collapse"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="billing-list-collapse"
-                  id="billing-collapse-controller"
-                  class="text-info float-right"
-                  ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
-                ></a>
+            <div class="card-container">
+              <div class="card" class="profile-info-card" id="billing-card">
+                <div class="card-header">
+                  Billing<a
+                    data-toggle="collapse"
+                    href="#billing-list-collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="billing-list-collapse"
+                    id="billing-collapse-controller"
+                    class="text-info float-right"
+                    ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
+                  ></a>
+                </div>
+                <ul
+                  class="list-group list-group-flush collapse"
+                  id="billing-list-collapse"
+                >
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Transaction History</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Renew Dues</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Make a Donation</a>
+                  </li>
+                </ul>
               </div>
-              <ul
-                class="list-group list-group-flush collapse"
-                id="billing-list-collapse"
-              >
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Transaction History</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Renew Dues</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Make a Donation</a>
-                </li>
-              </ul>
             </div>
-          </div>
-          <div class="card-container">
-            <div class="card" class="profile-info-card" id="documents-card">
-              <div class="card-header">
-                My Documents<a
-                  data-toggle="collapse"
-                  href="#documents-list-collapse"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="documents-list-collapse"
-                  id="documents-collapse-controller"
-                  class="text-info float-right"
-                  ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
-                ></a>
+            <div class="card-container">
+              <div class="card" class="profile-info-card" id="documents-card">
+                <div class="card-header">
+                  My Documents<a
+                    data-toggle="collapse"
+                    href="#documents-list-collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="documents-list-collapse"
+                    id="documents-collapse-controller"
+                    class="text-info float-right"
+                    ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
+                  ></a>
+                </div>
+                <ul
+                  class="list-group list-group-flush collapse"
+                  id="documents-list-collapse"
+                >
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">My first shared idea</a>
+                    <div class="text-muted">
+                      <small>Last modified: 3/10/2018</small>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Second idea</a>
+                    <div class="text-muted">
+                      <small>Last modified: 9/10/2018</small>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="blue-text" href="#">Committee Suggestions</a>
+                    <div class="text-muted">
+                      <small>Last modified: 1/20/2019</small>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <ul
-                class="list-group list-group-flush collapse"
-                id="documents-list-collapse"
-              >
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">My first shared idea</a>
-                  <div class="text-muted">
-                    <small>Last modified: 3/10/2018</small>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Second idea</a>
-                  <div class="text-muted">
-                    <small>Last modified: 9/10/2018</small>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <a class="blue-text" href="#">Committee Suggestions</a>
-                  <div class="text-muted">
-                    <small>Last modified: 1/20/2019</small>
-                  </div>
-                </li>
-              </ul>
             </div>
-          </div>
-          <div class="card-container">
-            <div class="card" class="profile-info-card" id="committees-card">
-              <div class="card-header">
-                Committees<a
-                  data-toggle="collapse"
-                  href="#committees-list-collapse"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="committees-list-collapse"
-                  id="committees-collapse-controller"
-                  class="text-info float-right"
-                  ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
-                ></a>
+            <div class="card-container">
+              <div class="card" class="profile-info-card" id="committees-card">
+                <div class="card-header">
+                  Committees<a
+                    data-toggle="collapse"
+                    href="#committees-list-collapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="committees-list-collapse"
+                    id="committees-collapse-controller"
+                    class="text-info float-right"
+                    ><i class="fas fa-chevron-down mt-1 mr-2 "> </i
+                  ></a>
+                </div>
+                <ul
+                  class="list-group list-group-flush collapse"
+                  id="committees-list-collapse"
+                >
+                  <li class="list-group-item">
+                    You are not currently on any committees
+                  </li>
+                </ul>
               </div>
-              <ul
-                class="list-group list-group-flush collapse"
-                id="committees-list-collapse"
-              >
-                <li class="list-group-item">
-                  You are not currently on any committees
-                </li>
-              </ul>
             </div>
           </div>
         </div>
