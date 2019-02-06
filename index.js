@@ -1,19 +1,12 @@
-jQuery(window).on(
-  "resize",
-  _.debounce(calculateLayout, 150, {
-    maxWait: 500
-  })
-);
-
-function calculateLayout(e) {
-  console.log(e);
-}
-
 // Individual Card Collapse-Expand + Chevron Controller
 
 $(".card-collapse-controller").click(toggleCardChevron);
 
 function toggleCardChevron() {
+  console.log($(this));
+  $(this)
+    .parent(".card-header")
+    .toggleClass("card-header-collapse");
   $(this)
     .find("i")
     .toggleClass("fa-chevron-down fa-chevron-up");
@@ -30,12 +23,14 @@ function expandAllSm() {
   expandAllCards();
   toggleAllControllers();
   setControllerChevronsExpand();
+  $(".card-header").removeClass("card-header-collapse");
 }
 
 function collapseAllSm() {
   collapseAllCards();
   toggleAllControllers();
   setControllerChevronsCollapse();
+  $(".card-header").addClass("card-header-collapse");
 }
 
 function expandAllCards() {
@@ -66,3 +61,16 @@ function setControllerChevronsExpand() {
     .removeClass("fa-chevron-down")
     .addClass("fa-chevron-up");
 }
+
+// Resize listener
+
+// jQuery(window).on(
+//   "resize",
+//   _.debounce(calculateLayout, 150, {
+//     maxWait: 500
+//   })
+// );
+
+// function calculateLayout(e) {
+//   console.log(e);
+// }

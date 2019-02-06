@@ -56,9 +56,35 @@
   color: #2e9ac2;
 }
 
+#profile-edit-pencil-sm {
+  margin: 0;
+  margin-left: -10px;
+  /* margin-top: -27px; */
+  font-size: 1rem;
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#profile-edit-pencil-sm i {
+  line-height: 2rem;
+}
+
+#profile-edit-pencil-sm i:hover {
+  color: #2e9ac2;
+}
+
 .expand-collapse-button button,
 #expand-collapse-all-button,
 .expand-collapse-buttons button {
   border: none !important;
   box-shadow: none !important;
+}
+
+.card-header-collapse {
+  border-bottom: 0px;
+  border-radius: calc(0.25rem - 1px) !important;
 }
