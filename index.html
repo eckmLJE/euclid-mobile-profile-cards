@@ -28,7 +28,8 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="min-height: 120vh">
+    <!-- profile-card-sticky-header -->
     <div class="profile-card-container-sm d-md-none sticky-top">
       <div class="card">
         <div class="card-body d-flex p-2">
@@ -46,6 +47,7 @@
             <small class="p-0 m-0 d-block">Director</small>
             <small class="p-0 m-0 d-block">NANR</small>
           </div>
+          <!-- Sticky Header Collapse Buttons -->
           <div
             class="expand-collapse-buttons px-2 py-1 ml-auto align-self-center"
           >
@@ -55,7 +57,7 @@
                 class="btn btn-outline-info btn-block"
                 style="padding: 0.25rem 0.5rem; line-height: 1.5rem"
               >
-              All<i class="fas fa-chevron-down ml-1 mt-1 float-right"></i>
+                All<i class="fas fa-chevron-down mr-1 mt-1 float-left"></i>
               </button>
             </div>
             <div
@@ -67,7 +69,7 @@
                 class="btn btn-outline-info btn-block"
                 style="padding: 0.25rem 0.5rem; line-height: 1.5rem"
               >
-              All<i class="fas fa-chevron-up mt-1 ml-1 float-right"></i>
+                All<i class="fas fa-chevron-up mt-1 mr-1 float-left"></i>
               </button>
             </div>
           </div>
@@ -75,6 +77,7 @@
       </div>
     </div>
     <div class="container">
+      <!-- Header Row -->
       <div class="row">
         <div class="col-12 my-4 d-none d-md-block">
           <h1 class="float-left">Member Dashboard</h1>
@@ -87,12 +90,13 @@
           </div>
         </div>
       </div>
-      <!-- content-row -->
+      <!-- Content Row -->
       <div class="row content-row">
         <!-- Profile Card Column -->
         <div class="d-none d-md-block col-12 col-md-4 col-lg-3">
-          <!-- Profile Card -->
+          <!-- Sticky Column -->
           <div class="sticky-top">
+            <!-- Profile Card -->
             <div class="profile-card-container">
               <div class="card">
                 <img
@@ -115,6 +119,7 @@
                 </div>
               </div>
             </div>
+            <!-- Expand-Collapse Buttons md+ -->
             <div class="expand-collapse-buttons py-1">
               <div class="p-1" id="profile-expand-all-div">
                 <button
