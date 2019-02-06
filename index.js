@@ -9,10 +9,8 @@ function calculateLayout(e) {
   console.log(e);
 }
 
-$("#profile-expand-all-div").click(expandAllSm);
-$("#profile-collapse-all-div").click(collapseAllSm);
-$("#expand-all-button-sm").click(expandAllSm);
-$("#collapse-all-button-sm").click(collapseAllSm);
+// Individual Card Collapse-Expand + Chevron Controller
+
 $(".card-collapse-controller").click(toggleCardChevron);
 
 function toggleCardChevron() {
@@ -21,11 +19,30 @@ function toggleCardChevron() {
     .toggleClass("fa-chevron-down fa-chevron-up");
 }
 
-function expandAll() {
+// Collapse-/Expand- All + Chevrons Controller
+
+$("#profile-expand-all-div").click(expandAllSm);
+$("#profile-collapse-all-div").click(collapseAllSm);
+$("#expand-all-button-sm").click(expandAllSm);
+$("#collapse-all-button-sm").click(collapseAllSm);
+
+function expandAllSm() {
+  expandAllCards();
+  toggleAllControllers();
+  setControllerChevronsExpand();
+}
+
+function collapseAllSm() {
+  collapseAllCards();
+  toggleAllControllers();
+  setControllerChevronsCollapse();
+}
+
+function expandAllCards() {
   $(".collapse").collapse("show");
 }
 
-function collapseAll() {
+function collapseAllCards() {
   $(".collapse").collapse("hide");
 }
 
@@ -48,16 +65,4 @@ function setControllerChevronsExpand() {
     .find("i")
     .removeClass("fa-chevron-down")
     .addClass("fa-chevron-up");
-}
-
-function expandAllSm() {
-  expandAll();
-  toggleAllControllers();
-  setControllerChevronsExpand();
-}
-
-function collapseAllSm() {
-  collapseAll();
-  toggleAllControllers();
-  setControllerChevronsCollapse();
 }
